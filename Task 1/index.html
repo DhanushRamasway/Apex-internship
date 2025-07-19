@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATS Insight - Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ATS<span class="highlight">Insight</span></div>
+    <div class="nav-actions">
+      <a href="#" class="login-btn">Sign In</a>
+      <a href="#" class="signup-btn">Get Started</a>
+    </div>
+  </nav>
+
+  <main class="hero">
+    <div class="content">
+      <h1>Is your resume <span class="gradient">ATS-ready?</span></h1>
+      <p class="sub-text">Our smart AI-powered resume checker reviews 30+ key criteria to help improve your chances of getting hired.</p>
+
+      <div class="upload-box">
+        <input type="file" id="fileInput" hidden />
+        <button onclick="document.getElementById('fileInput').click()">Upload Your Resume</button>
+        <p class="file-note">PDF & DOCX only. Max 2MB</p>
+        <p id="fileName">No file selected.</p>
+        <button class="analyze-btn" onclick="showAlert()">Analyze Now</button>
+      </div>
+    </div>
+
+    <div class="preview">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Resume Preview" class="resume-preview">
+      <div class="score-box">
+        <p class="score-title">Resume Score</p>
+        <div class="score-meter">
+          <div class="score">92</div>
+          <div class="score-details">/100<br><span>24 Issues</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

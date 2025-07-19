@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f0f9ff, #e0f7f9);
+  color: #333;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo .highlight {
+  color: #00b894;
+}
+
+.nav-actions a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.login-btn {
+  border: 1px solid #00b894;
+  color: #00b894;
+}
+
+.signup-btn {
+  background: #00b894;
+  color: white;
+}
+
+/* Main Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.content,
+.preview {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gradient {
+  background: linear-gradient(to right, #00b894, #00cec9);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sub-text {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Upload Box */
+.upload-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.upload-box button {
+  background: #00b894;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.file-note,
+#fileName {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Resume Preview */
+.resume-preview {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+/* Score Card */
+.score-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.score-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score-meter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #00b894;
+}
+
+.score-details {
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
